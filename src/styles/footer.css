@@ -1,0 +1,189 @@
+.upper {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  font-family: Lexend;
+}
+.f-logo {
+  width: 100px;
+}
+.fc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 20px;
+  gap: 20px;
+}
+.f-two {
+  justify-content: center;
+  text-align: center;
+}
+
+.social img:hover {
+  cursor: pointer;
+}
+
+.f-one {
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+}
+.footer input {
+  background-color: white;
+  border: none;
+  padding: 16px;
+  width: 300px;
+  border-radius: 24px 0 0 24px;
+  border: 3px solid #121636;
+  border-right: none;
+}
+.f-two {
+  max-width: 200px;
+}
+.f-three {
+  max-width: 400px;
+}
+.f-four {
+  max-width: 400px;
+}
+.footer input::placeholder {
+}
+.f-four div {
+  display: flex;
+}
+.f-four button {
+  border-radius: 0 24px 24px 0;
+  width: 80px;
+  border: none;
+  background-color: #121636;
+  border: 3px solid #121636;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.footer button:hover {
+  cursor: pointer;
+  background-color: white;
+  border: 3px solid #121636;
+  color: #121636;
+
+  border-radius: 0 12px 12px 0;
+}
+.footer {
+  background: linear-gradient(16deg, #afd4ef, #afd4ef83, #afd4ef00);
+  padding: 20px 100px 20px 20px;
+  /* Reduced padding for mobile */
+}
+
+.fc {
+  width: 100%;
+}
+.f-one {
+  width: 20%;
+}
+@media (max-width: 1380px) {
+  .footer {
+    padding: 20px;
+    /* Reduced padding for mobile */
+  }
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .upper {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .f-logo {
+    width: 140px;
+    margin-bottom: 20px;
+  }
+
+  .fc {
+    align-items: center;
+    text-align: center;
+  }
+
+  .social {
+    width: 90%;
+    margin: 0 auto;
+    padding: 8px;
+  }
+
+  .social img {
+    height: 32px;
+  }
+
+  .f-one {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer input {
+    width: 100%;
+    border-radius: 24px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .f-four {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .f-four div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .f-four button {
+    border-radius: 24px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .footer h3 {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .fc {
+    width: 100%;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 60px 40px 20px 40px;
+  }
+
+  .upper {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .fc {
+    min-width: 200px;
+  }
+
+  .f-one {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer input {
+    width: 300px;
+  }
+}

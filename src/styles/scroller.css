@@ -1,0 +1,34 @@
+.scroll-container {
+  overflow: clip;
+  white-space: nowrap;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: inline-block;
+  animation: scroll-left 30s linear infinite;
+}
+
+.scroll-track img {
+  height: 80px;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .scroll-track img {
+    height: 36px;
+    margin: 0 8px;
+  }
+}
+@media (max-width: 768px) {
+}

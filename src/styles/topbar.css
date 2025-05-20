@@ -1,0 +1,267 @@
+.topbar-container {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding: 8px 0;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.topbar-container.scrolled {
+  padding: 0;
+}
+
+.navbar {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.navbar.scrolled {
+  width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.logo {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.button-topbar {
+  background-color: #121636;
+  color: aliceblue;
+  padding: 16px 24px;
+  font-size: 1.2rem;
+  border-radius: 28px;
+  border: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: all 0.5s;
+  border: 3px solid #121636;
+  font-family: Lexend;
+  background-image: url(../assets/bgi-btn.png);
+  background-size: 60px;
+  background-repeat: repeat-x;
+  background-blend-mode: color;
+  background-position-x: -40px;
+}
+.button-topbar:hover {
+  background-color: transparent;
+  border-radius: 8px;
+  color: #121636;
+  background-image: url(../assets/bgi-btn.png);
+
+  background-position: left top;
+
+  cursor: pointer;
+}
+
+.social-media {
+  position: absolute;
+  width: 100%;
+  max-width: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: end;
+
+  gap: 16px;
+  top: 8px;
+  z-index: 30;
+}
+.social-media a img {
+  height: 24px;
+  transition: all 0.3s;
+}
+.social-media a img:hover {
+  scale: 0.9;
+}
+.navbar-elm {
+  display: flex;
+  z-index: 20;
+  gap: 40px;
+  font-size: 1.8rem;
+  width: 400px;
+  position: fixed;
+  top: 80px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  right: 50%;
+  transform: translateX(50%);
+}
+.navbar-elm a {
+  text-decoration: none;
+  font-family: Lexend;
+}
+
+.navbar-elm.scrolled {
+  top: 240px;
+  right: 0%;
+  transform: unset;
+  flex-direction: column;
+  width: 200px;
+}
+.more {
+  display: none;
+  color: #121636;
+}
+/* Add these styles to your existing CSS */
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+}
+
+.mobile-menu .logo {
+  display: block;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.mobile-menu .social-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  transform: none;
+  margin-top: 40px;
+}
+
+.mobile-menu .navbar-elm {
+  position: relative;
+  top: 0;
+  right: 0;
+  transform: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.mobile-menu .navbar-elm a {
+  font-size: 2rem;
+  color: #121636;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: #121636;
+  cursor: pointer;
+}
+@media (max-width: 1380px) {
+  .topbar-container.scrolled {
+    height: 100px;
+    backdrop-filter: blur(8px);
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.194);
+  }
+  .topbar-container {
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
+  .navbar-elm {
+    right: unset;
+    transform: unset;
+  }
+  .navbar-elm a {
+    text-decoration: none;
+    font-family: Lexend;
+  }
+  .navbar-elm.scrolled {
+    position: fixed;
+    top: 28px;
+    width: 400px;
+    flex-direction: row;
+    right: auto;
+    left: auto;
+  }
+}
+@media (max-width: 1025px) {
+  .social-media {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo.scrolled {
+    transform: translateY(-100px);
+    height: 100px;
+  }
+  .navbar-elm {
+    display: none;
+  }
+  .navbar-elm.active {
+    display: flex;
+  }
+  .logo {
+    display: none;
+  }
+  .more {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-left: 20px;
+  }
+  .more:hover {
+    cursor: pointer;
+  }
+}
+@media (max-width: 700px) {
+  .topbar-container {
+    height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .topbar-container.scrolled {
+    padding: 0;
+    width: 100%;
+    height: 80px;
+  }
+  .button-topbar.scrolled {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

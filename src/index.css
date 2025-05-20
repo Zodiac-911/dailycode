@@ -1,0 +1,44 @@
+:root {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: clip;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #121636;
+}
+@font-face {
+  font-family: Lexend;
+  src: url(./assets/Lexend-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: RobotoMono;
+  src: url(./assets/RobotoMono-VariableFont_wght.ttf);
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+::-webkit-scrollbar-track {
+  background: #afd4ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #121636;
+  border-radius: 99px 0 0 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #121636d6;
+}
+@media (max-width: 1000px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
