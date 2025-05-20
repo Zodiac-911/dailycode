@@ -18,10 +18,12 @@ function HomeContent() {
       <div className="content-container" data-aos="zoom-out-up">
         <div className="intro">
           <h1 className="">Welcome To DailyCode</h1>
-          <p className="arrow-down">ᐯ</p>
+          <p className="arrow-down">
+            <a href="#card-one">ᐯ</a>
+          </p>
         </div>
 
-        <div className="one-content card-content">
+        <div className="one-content card-content" id="card-one">
           <h1 data-aos="fade-up">Excellence in Engineering</h1>
           <p>
             We create excellently designed and efficient solutions for your
@@ -67,7 +69,6 @@ function HomeContent() {
               data-aos="flip-up"
               data-aos-delay="50"
               data-aos-duration="1500"
-              data-aos-offset="400"
             >
               <img src={screen} alt="" />
               <h3>CTO as a Service</h3>
@@ -82,7 +83,6 @@ function HomeContent() {
               data-aos="flip-up"
               data-aos-delay="50"
               data-aos-duration="1500"
-              data-aos-offset="400"
             >
               <img src={dev} alt="" />
               <h3>Product Development</h3>
@@ -97,7 +97,6 @@ function HomeContent() {
               data-aos="flip-up"
               data-aos-delay="50"
               data-aos-duration="1500"
-              data-aos-offset="400"
             >
               <img src={comment} alt="" />
               <h3>Consulting and Advising</h3>
@@ -112,7 +111,6 @@ function HomeContent() {
               data-aos="flip-up"
               data-aos-delay="50"
               data-aos-duration="1500"
-              data-aos-offset="400"
             >
               <img src={detective} alt="" />
               <h3>Smart Contract Audits</h3>
