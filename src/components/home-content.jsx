@@ -15,15 +15,15 @@ import ws4 from "../assets/featured-works/website4.png";
 function HomeContent() {
   return (
     <>
-      <div className="content-container" data-aos="zoom-out-up">
+      <div className="content-container">
         <div className="intro">
           <h1 className="">Welcome To DailyCode</h1>
           <p className="arrow-down">
-            <a href="#card-one">ᐯ</a>
+            <a href="#home">ᐯ</a>
           </p>
         </div>
 
-        <div className="one-content card-content" id="card-one">
+        <div className="one-content card-content" id="home">
           <h1 data-aos="fade-up">Excellence in Engineering</h1>
           <p>
             We create excellently designed and efficient solutions for your

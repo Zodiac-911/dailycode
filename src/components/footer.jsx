@@ -1,8 +1,8 @@
 import "../styles/footer.css";
 import logo from "../assets/daily-code-logo.png";
-import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook.png";
-
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
 import youtube from "../assets/youtube.png";
 
 function Footer() {
@@ -31,6 +31,23 @@ function Footer() {
               <input type="email" placeholder="Your Email Adress " />
               <button>Send</button>
             </div>
+          </div>
+          <div className="social-media-footer">
+            <a href="https://www.facebook.com/DailyCodeEn" target="_blank">
+              <img src={facebook} alt="facebook" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/dailycodeuk/"
+              target="_blank"
+            >
+              <img src={linkedin} alt="linkedin" />
+            </a>
+            <a href="https://github.com/DailyCode-LTD" target="_blank">
+              <img src={github} alt="github" />
+            </a>
+            <a href="https://www.youtube.com/@dailycodeLTD" target="_blank">
+              <img src={youtube} alt="youtube" />
+            </a>
           </div>
         </div>
       </div>

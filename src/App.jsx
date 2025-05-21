@@ -4,6 +4,8 @@ import HomeContent from "./components/home-content";
 import { ShaderGradientCanvas } from "@shadergradient/react";
 import { ShaderGradient } from "@shadergradient/react";
 import Footer from "./components/footer";
+import { Route, Routes } from "react-router-dom";
+import Blogs from "./pages/blogs";
 
 function App() {
   return (
@@ -62,7 +64,13 @@ function App() {
         />
       </ShaderGradientCanvas>
       <Topbar />
-      <HomeContent />
+      <main id="main">
+        <Routes>
+          <Route path="/" element={<HomeContent />} />
+          <Route path="/blogs" element={<Blogs />} />
+        </Routes>
+      </main>
+
       <Footer />
     </>
   );

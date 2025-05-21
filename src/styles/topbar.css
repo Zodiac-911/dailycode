@@ -27,10 +27,12 @@
   margin-right: 16px;
 }
 .logo {
-  height: 100%;
+  height: 200px;
   transition: all 0.3s ease;
 }
-
+.mobile-menu {
+  display: none;
+}
 .button-topbar {
   background-color: #121636;
   color: aliceblue;
@@ -111,72 +113,7 @@
   display: none;
   color: #121636;
 }
-/* Add these styles to your existing CSS */
 
-/* Mobile Menu Styles */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  z-index: 40;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  transform: translateY(-100%);
-  transition: transform 0.5s ease;
-}
-
-.mobile-menu.active {
-  transform: translateY(0);
-}
-
-.mobile-menu .logo {
-  display: block;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.mobile-menu .social-media {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  transform: none;
-  margin-top: 40px;
-}
-
-.mobile-menu .navbar-elm {
-  position: relative;
-  top: 0;
-  right: 0;
-  transform: none;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-.mobile-menu .navbar-elm a {
-  font-size: 2rem;
-  color: #121636;
-}
-
-.close-menu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  font-size: 3rem;
-  color: #121636;
-  cursor: pointer;
-}
 @media (max-width: 1380px) {
   .topbar-container.scrolled {
     height: 100px;
@@ -209,6 +146,10 @@
     right: auto;
     left: auto;
   }
+  .logo.scrolled {
+    height: 100px;
+    transition: all 0.3s ease;
+  }
 }
 @media (max-width: 1025px) {
   .social-media {
@@ -221,9 +162,8 @@
     align-items: center;
   }
 
-  .logo.scrolled {
-    transform: translateY(-100px);
-    height: 100px;
+  .logo {
+    display: none;
   }
   .navbar-elm {
     display: none;
@@ -231,10 +171,9 @@
   .navbar-elm.active {
     display: flex;
   }
-  .logo {
-    display: none;
-  }
+
   .more {
+    position: absolute;
     display: flex;
     background-color: transparent;
     border: none;
@@ -242,6 +181,70 @@
     margin-left: 20px;
   }
   .more:hover {
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu.active {
+    transform: translateY(0);
+  }
+
+  .mobile-menu .logo-mobile {
+    display: block;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-menu .social-media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: 40px;
+  }
+
+  .mobile-menu .navbar-elm {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .mobile-menu .navbar-elm a {
+    font-size: 2rem;
+    color: #121636;
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #121636;
     cursor: pointer;
   }
 }

@@ -13,6 +13,16 @@ body {
   font-size: 14px;
   scroll-behavior: smooth;
 }
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+#main {
+  flex-grow: 1;
+}
 a {
   text-decoration: none;
   color: #121636;

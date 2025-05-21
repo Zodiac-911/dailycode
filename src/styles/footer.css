@@ -34,11 +34,14 @@ body {
 .footer input {
   background-color: white;
   border: none;
-  padding: 16px;
+  padding: 12px 16px;
   width: 300px;
   border-radius: 24px 0 0 24px;
   border: 3px solid #121636;
   border-right: none;
+  font-family: Lexend;
+  color: #121636;
+  font-size: 1.1rem;
 }
 .f-two {
   max-width: 200px;
@@ -63,18 +66,20 @@ body {
   color: white;
   font-size: 1.2rem;
   transition: all 0.3s;
+  border-left: none;
 }
 .footer button:hover {
   cursor: pointer;
   background-color: white;
-  border: 3px solid #121636;
+
   color: #121636;
-  border-left: none;
+
   border-radius: 0 12px 12px 0;
 }
 .footer {
   background: linear-gradient(16deg, #afd4ef, #afd4ef83, #afd4ef00);
   padding: 20px 100px 20px 20px;
+
   /* Reduced padding for mobile */
 }
 
@@ -83,6 +88,24 @@ body {
 }
 .f-one {
   width: 20%;
+}
+.social-media-footer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+
+  gap: 16px;
+
+  z-index: 1;
+}
+.social-media-footer a img {
+  height: 24px;
+  transition: all 0.3s;
+}
+.social-media-footer a img:hover {
+  scale: 0.9;
 }
 @media (max-width: 1380px) {
   .footer {

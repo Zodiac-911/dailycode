@@ -5,6 +5,7 @@ import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import youtube from "../assets/youtube.png";
+import { Link } from "react-router-dom";
 
 function Topbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,16 +27,20 @@ function Topbar() {
     <>
       <div className={`topbar-container ${scrolled ? "scrolled" : ""}`}>
         <div className={`navbar-elm ${scrolled ? "scrolled" : ""}`}>
-          <a href="#">Blog</a>
-          <a href="#">Projects</a>
-          <a href="#">Libraries</a>
+          <Link to="/blogs">Blog</Link>
+          <Link to="/projects">Projects</Link>
+
+          <Link to="/libraries">Libraries</Link>
         </div>
         <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
-          <img
-            src={logo}
-            alt="Logo"
-            className={`logo ${scrolled ? "scrolled" : ""}`}
-          />
+          <Link to="/">
+            <img
+              src={logo}
+              alt="Logo"
+              className={`logo ${scrolled ? "scrolled" : ""}`}
+            />
+          </Link>
+
           <button className="more" id="more" onClick={toggleMenu}>
             ☰
           </button>
@@ -81,17 +86,25 @@ function Topbar() {
         <button className="close-menu" onClick={toggleMenu}>
           ×
         </button>
-        <img src={logo} alt="Logo" className="logo" />
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            onClick={toggleMenu}
+            className="logo-mobile"
+          />
+        </Link>
         <div className={`navbar-elm ${menuOpen ? "active" : ""}`}>
-          <a href="#" onClick={toggleMenu}>
+          <Link to="/blogs" onClick={toggleMenu}>
             Blog
-          </a>
-          <a href="#" onClick={toggleMenu}>
+          </Link>
+          <Link to="/projects" onClick={toggleMenu}>
             Projects
-          </a>
-          <a href="#" onClick={toggleMenu}>
+          </Link>
+
+          <Link to="/libraries" onClick={toggleMenu}>
             Libraries
-          </a>
+          </Link>
         </div>
         <div className="social-media">
           <a
