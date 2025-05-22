@@ -6,6 +6,7 @@ import { ShaderGradient } from "@shadergradient/react";
 import Footer from "./components/footer";
 import { Route, Routes } from "react-router-dom";
 import Blogs from "./pages/blogs";
+import Projects from "./pages/projects";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeContent />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
 

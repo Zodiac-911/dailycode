@@ -45,6 +45,8 @@
   padding: 20px;
   gap: 20px;
   object-fit: cover;
+
+  background-size: 198px;
 }
 .ccIMG {
   position: absolute;
@@ -53,8 +55,8 @@
   margin-top: -14px;
 }
 
-.blog-date span {
-  font-weight: 800;
-}
-.blog-title {
+.blog-date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
