@@ -13,7 +13,7 @@
 }
 
 .blog-card {
-  max-width: 300px;
+  width: 300px;
   background-color: white;
   height: 432px;
   display: flex;
@@ -40,7 +40,7 @@
 .blog-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   height: 200px;
   padding: 20px;
   gap: 20px;
@@ -48,6 +48,7 @@
 
   background-size: 198px;
 }
+
 .ccIMG {
   position: absolute;
   height: 24px;

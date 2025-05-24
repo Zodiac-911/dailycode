@@ -1,22 +1,18 @@
 import "../styles/projects.css";
-import projectImage from "../assets/project-image.png";
+
 import technologie1 from "../assets/sponsors/sponsor1.svg";
 import technologie2 from "../assets/sponsors/sponsor2.svg";
 import technologie3 from "../assets/sponsors/sponsor3.png";
 import technologie4 from "../assets/sponsors/sponsor4.png";
 import technologie5 from "../assets/sponsors/sponsor5.png";
 
-function ProjectCard() {
+function ProjectCard({ img, title, description, time, members }) {
   return (
     <>
       <div className="project-card" data-aos="fade-up">
         <div className="project-card-text">
-          <h2>Project Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod
-            asperiores consequatur possimus aperiam hic expedita, ad beatae
-            voluptas necessitatibus nisi reiciendis
-          </p>
+          <h2>{title}</h2>
+          <p>{description}</p>
           <div className="project-card-down">
             <div className="project-card-technologies">
               <img src={technologie1} alt="" />
@@ -27,8 +23,7 @@ function ProjectCard() {
             </div>
             <div className="down-info">
               <p>
-                {" "}
-                30 days{" "}
+                <span>{time}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -41,7 +36,7 @@ function ProjectCard() {
                 </svg>
               </p>
               <p>
-                3
+                <span>{members}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,7 +51,7 @@ function ProjectCard() {
             </div>
           </div>
         </div>
-        <img className="project-card-image" src={projectImage} alt="" />
+        <img className="project-card-image" src={img} alt="" />
       </div>
     </>
   );
