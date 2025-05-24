@@ -19,7 +19,7 @@ function Footer() {
             <h2>Contact Info</h2>
             <p>71-75 Shelton Street Covent Garden London WC2H 9JQ UK</p>
             <p>✆ + 447418353248</p>
-            <a href="contact@dailycode.dev">✉ contact@dailycode.dev</a>
+            <a href="mailto:contact@dailycode.dev">✉ contact@dailycode.dev</a>
           </div>
           <div className="f-four fc">
             <h2>Join Our Newsletter</h2>
@@ -31,23 +31,6 @@ function Footer() {
               <input type="email" placeholder="Your Email Adress " />
               <button>Send</button>
             </div>
-          </div>
-          <div className="social-media-footer">
-            <a href="https://www.facebook.com/DailyCodeEn" target="_blank">
-              <img src={facebook} alt="facebook" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/dailycodeuk/"
-              target="_blank"
-            >
-              <img src={linkedin} alt="linkedin" />
-            </a>
-            <a href="https://github.com/DailyCode-LTD" target="_blank">
-              <img src={github} alt="github" />
-            </a>
-            <a href="https://www.youtube.com/@dailycodeLTD" target="_blank">
-              <img src={youtube} alt="youtube" />
-            </a>
           </div>
         </div>
       </div>

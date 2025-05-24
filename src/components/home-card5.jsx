@@ -22,17 +22,17 @@ function HomeCard5() {
           img={ws1}
         ></HomeFtProjectCard>
         <HomeFtProjectCard
-          title="WAAS"
+          title="YOUTUBE"
           description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, expedita, veniam fuga ea nemo, ad obcaecati commodi odit "
           img={ws2}
         ></HomeFtProjectCard>
         <HomeFtProjectCard
-          title="WAAS"
+          title="BillGates"
           description=" ad obcaecati commodi odit rerum maiores enim? Consequatur illum beatae doloremque et earum ea laudantium ab."
           img={ws3}
         ></HomeFtProjectCard>
         <HomeFtProjectCard
-          title="WAAS"
+          title="SNAPSHAT"
           description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, expedita, veniam fuga ea nemo, ad obcaecati commodi odit rerum maiores enim? Consequatur illum beatae doloremque et earum ea laudantium ab."
           img={ws4}
         ></HomeFtProjectCard>

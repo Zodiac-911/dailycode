@@ -42,6 +42,7 @@ body {
   font-family: Lexend;
   color: #121636;
   font-size: 1.1rem;
+  transition: all 0.3s;
 }
 .f-two {
   max-width: 200px;
@@ -53,6 +54,12 @@ body {
   max-width: 400px;
 }
 .footer input::placeholder {
+}
+.footer input:focus {
+  outline: none;
+  border-top: 3px solid #ffffff00;
+  border-left: 3px solid #ffffff00;
+  border-bottom: 3px solid #ffffff00;
 }
 .f-four div {
   display: flex;
@@ -89,24 +96,7 @@ body {
 .f-one {
   width: 20%;
 }
-.social-media-footer {
-  position: absolute;
-  width: 100%;
-  display: flex;
 
-  justify-content: center;
-
-  gap: 16px;
-
-  z-index: 1;
-}
-.social-media-footer a img {
-  height: 24px;
-  transition: all 0.3s;
-}
-.social-media-footer a img:hover {
-  scale: 0.9;
-}
 @media (max-width: 1380px) {
   .footer {
     padding: 20px;

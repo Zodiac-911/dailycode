@@ -13,6 +13,39 @@ body {
   font-size: 14px;
   scroll-behavior: smooth;
 }
+
+body {
+  background: radial-gradient(
+    circle at top,
+    #afd4ef,
+    #e0f4fc,
+    #b3e4f9,
+    #d6efff
+  );
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  75% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #root {
   display: flex;
   flex-direction: column;

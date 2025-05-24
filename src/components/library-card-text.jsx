@@ -9,7 +9,7 @@ import npmLogo from "../assets/npm.png";
 import githubLogo from "../assets/github.png";
 import websiteLogo from "../assets/website-icone.png";
 
-function LibraryCardText({ title, description, img, github, npm, website }) {
+function LibraryCardText({ title, description, github, npm, website }) {
   return (
     <>
       <div className="library-text">
