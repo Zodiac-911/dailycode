@@ -45,9 +45,11 @@ function Topbar() {
             ☰
           </button>
           <div className="social-media"></div>
-          <button className={`button-topbar ${scrolled ? "scrolled" : ""}`}>
-            Contact Us
-          </button>
+          <Link to="/contact">
+            <button className={`button-topbar ${scrolled ? "scrolled" : ""}`}>
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
       <div className="social-media">
@@ -136,7 +138,9 @@ function Topbar() {
             <img src={youtube} alt="youtube" />
           </a>
         </div>
-        <button className="button-topbar">Contact Us</button>
+        <Link to="/contact" onClick={toggleMenu}>
+          <button className="button-topbar">Contact Us</button>
+        </Link>
       </div>
     </>
   );

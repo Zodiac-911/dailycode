@@ -8,6 +8,7 @@
   top: 0;
   background-color: transparent;
   transition: all 0.3s ease;
+  z-index: -30;
 }
 
 .topbar-container.scrolled {
@@ -129,6 +130,7 @@
     top: 0;
     width: 100%;
     z-index: 20;
+    z-index: 200;
   }
   .navbar-elm {
     right: unset;

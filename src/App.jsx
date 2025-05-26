@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Blogs from "./pages/blogs";
 import Projects from "./pages/projects";
 import Libraries from "./pages/libraries";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/libraries" element={<Libraries />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 

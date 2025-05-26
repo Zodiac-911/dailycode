@@ -1,0 +1,125 @@
+.contact-container {
+  background-color: white;
+
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 280px;
+  margin-bottom: 100px;
+  border-radius: 24px;
+  overflow: hidden;
+
+  box-shadow: 0 0px 32px #12163646;
+}
+.illustration-holder {
+  width: 60%;
+}
+.illustration-holder img {
+  height: 500px;
+  object-fit: cover;
+  margin-left: -12px;
+}
+.input-holder {
+  background-color: #121636;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  gap: 40px;
+}
+.input-holder form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  padding: 0 40px;
+}
+.input-holder form input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #afd4ef;
+  transition: all 0.3s ease;
+  width: 80%;
+  height: 40px;
+  color: white;
+  font-size: 1.2rem;
+  resize: none;
+}
+textarea {
+  height: 32px;
+}
+.input-holder form input:focus,
+textarea:focus {
+  outline: none;
+
+  width: 92%;
+}
+.input-holder form input::placeholder,
+textarea::placeholder {
+  color: #afd4ef;
+  transition: all 0.3s ease;
+}
+
+.input-holder form input:focus::placeholder,
+textarea:focus::placeholder {
+  color: white;
+
+  transform: translateX(-100px);
+}
+
+.input-holder form button {
+  background-color: #afd4ef;
+  color: #121636;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: 80%;
+  border: 2px solid #afd4ef00;
+  background-image: url(../assets/paper-plane.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position-x: -16px;
+}
+.input-holder form button:hover {
+  background-color: transparent;
+  border-radius: 8px;
+  color: white;
+  border: 2px solid #afd4ef;
+  background-position-x: 200px;
+  background-position-y: -20px;
+  background-size: 1px;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 200px;
+    margin-bottom: 0;
+    background-color: transparent;
+    gap: 60px;
+  }
+  .illustration-holder {
+    display: none;
+  }
+  .input-holder {
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  .input-holder form {
+    padding: 0 20px;
+  }
+  .message {
+    height: 80px;
+  }
+}
